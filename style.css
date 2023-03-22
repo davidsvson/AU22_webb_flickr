@@ -1,0 +1,46 @@
+
+.button {
+    border: lightblue;
+    background-color: lightblue;
+    color: white;
+    border-radius: 999em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+main {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    margin-top: 1em;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay.show {
+    display: flex;
+}
+
+#overlay figure {
+    max-width: 50em;
+}
+
+#overlay img {
+    width: 100%;
+}
+
+
